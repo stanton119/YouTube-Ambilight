@@ -10,6 +10,20 @@ function setupAmbilight() {
 	if (typeof setupCorrectly != 'undefined') {
 	// if (setupCorrectly) {
 		console.log("Ambilight: Already set up");
+		
+		// if setup and turned back on:
+		if (!ambilightState) {
+			// setup listener, remove excess
+			videoAmbiPlayer.addEventListener("play", function() {
+				console.log("Ambilight: Adding event listener");
+				callBackOn = 1;
+				timerCallback();
+			}, false);
+		
+			callBackOn = 1;
+			ambilightState = 1;
+			timerCallback();
+		}
 		return;
 	}
 	
