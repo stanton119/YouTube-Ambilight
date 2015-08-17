@@ -4,7 +4,7 @@
     "name": "YouTube™ Super Ambient Theatre Mode",
     "short_name": "YouTube™ Ambilight",
     "description": "Colour the page background to match the colours from the YouTube video",
-    "version": "2.2",
+    "version": "2.3",
     "author": "Richard Stanton",
   
 	"minimum_chrome_version": "34",
